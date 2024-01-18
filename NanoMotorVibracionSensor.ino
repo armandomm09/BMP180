@@ -1,11 +1,11 @@
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
-#include <Adafruit_BMP180.h>
+#include <Adafruit_BMP280.h>
 
 const int ledPin = 13;  // LED para indicar mediciones
 const int motorPin = 9; // Pin para el motor de vibración
 
-Adafruit_BMP180 bmp;    // Objeto para el sensor BMP180
+Adafruit_BMP280 bmp;    // Objeto para el sensor BMP280
 
 void setup() {
   Serial.begin(9600);
@@ -13,7 +13,7 @@ void setup() {
   pinMode(motorPin, OUTPUT);
 
   if (!bmp.begin()) {
-    Serial.println("No se pudo encontrar el sensor BMP180. Verifique la conexión o la dirección del sensor.");
+    Serial.println("No se pudo encontrar el sensor BMP280. Verifique la conexión o la dirección del sensor.");
     while (1);
   }
 }
