@@ -43,7 +43,6 @@ void desactivarVibracion() {
 
 void registrarDatos(float presion) {
   // Puedes enviar datos a través de I2C, almacenarlos en una tarjeta SD, etc.
-  // En este ejemplo, simplemente se imprimen en el monitor serial. 
   Serial.print("Presion arterial: ");
   Serial.print(presion);
   Serial.println(" hPa");
