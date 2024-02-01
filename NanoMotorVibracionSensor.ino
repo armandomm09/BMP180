@@ -2,7 +2,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BMP280.h>
 
-const int ledPin = 13;  // LED para indicar mediciones
+const int ledPin = 12;  // LED para indicar mediciones
 const int motorPin = 9; // Pin para el motor de vibración
 
 Adafruit_BMP280 bmp;    // Objeto para el sensor BMP280
